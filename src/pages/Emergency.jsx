@@ -4,7 +4,6 @@ const Emergency = () => {
   return (
     <div className="container py-5">
       <div className="row align-items-center">
-        {/* Left Side - Text Content */}
         <div className="col-md-6 mb-4 mb-md-0">
           <h1 className="text-primary fw-bold mb-3">24x7 Emergency Services</h1>
           <p className="text-muted">
@@ -25,7 +24,6 @@ const Emergency = () => {
           </p>
         </div>
 
-        {/* Right Side - Image */}
         <div className="col-md-6">
           <img
             src="https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?auto=format&fit=crop&w=800&q=80"

@@ -31,7 +31,6 @@ const Testimonials = () => {
         What Our Patients Say
       </h2>
 
-      {/* Testimonials Display - Left to Right */}
       <div className="flex flex-wrap justify-center gap-6 px-4">
         {testimonials.map((t, index) => (
           <div
@@ -44,7 +43,6 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {/* Form to Add Testimonial */}
       <div className="max-w-lg mx-auto mt-10 bg-white shadow-md p-6 rounded">
         <h3 className="text-xl font-semibold mb-4">Add Your Feedback</h3>
         <form onSubmit={handleSubmit}>

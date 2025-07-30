@@ -1,16 +1,3 @@
-// const Hero = () => (
-//   <section className="text-center py-20 bg-blue-50">
-//     <h1 className="text-4xl font-bold mb-4">Welcome to SmartCare Hospital</h1>
-//     <p className="text-lg mb-6">
-//       Compassionate care, advanced medicine, close to home.
-//     </p>
-//     <button className="px-6 py-2 bg-blue-600 text-white rounded">
-//       Book Appointment
-//     </button>
-//   </section>
-// );
-
-// export default Hero;
 import React from "react";
 import Appointment from "../pages/Appointment";
 import { NavLink } from "react-router-dom";
