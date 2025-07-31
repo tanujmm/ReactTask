@@ -28,7 +28,7 @@ const Experts = () => {
 
         <div className="col-md-6">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbzjCbdFlYKQg4O1EXx41DLxFZ8ngYBUsAw&s"
+            src="https://cdn.pixabay.com/photo/2024/01/25/16/04/doctor-8532152_1280.png"
             alt="Expert Doctors Team"
             className="img-fluid rounded shadow h-20 w-200"
           />
