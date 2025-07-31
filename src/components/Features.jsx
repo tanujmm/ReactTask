@@ -17,14 +17,17 @@ const features = [
   {
     title: "Modern Operation Theatre",
     desc: "We have ultra-modern, sterile operating rooms designed to support complex surgeries with minimal risk and faster recovery.",
+    ref: "/theatre",
   },
   {
     title: "Health Packages",
     desc: "Choose from a wide range of affordable wellness check-ups, including heart health, women’s health, senior care, and full-body scans.",
+    ref: "/health",
   },
   {
     title: "Pharmacy & Lab at One Place",
     desc: "Save time with on-site pharmacy and lab services, ensuring that all your diagnostic and medication needs are met in one visit.",
+    ref: "/pharmacy",
   },
 ];
 

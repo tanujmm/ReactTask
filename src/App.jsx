@@ -7,6 +7,9 @@ import Emergency from "./pages/Emergency";
 import Experts from "./pages/Experts";
 import Patients from "./pages/Patients";
 import CallToAction from "./pages/CallToAction";
+import Theatre from "./pages/Theatre";
+import Health from "./pages/Health";
+import Pharmacy from "./pages/Pharmacy";
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
       <Route path="/experts" element={<Experts />} />
       <Route path="/patients" element={<Patients />} />
       <Route path="/call" element={<CallToAction />} />
+      <Route path="/theatre" element={<Theatre />} />
+      <Route path="/health" element={<Health />} />
+      <Route path="/pharmacy" element={<Pharmacy />} />
     </Routes>
   );
 };

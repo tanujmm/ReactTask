@@ -1,6 +1,7 @@
-import React from "react";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
+
 const Appointment = () => {
   const name = useRef("");
   const email = useRef("");
@@ -34,122 +35,137 @@ const Appointment = () => {
     toast.success("Application Submitted Successfully", {
       position: "top-center",
     });
-    // formData = {};
   };
 
   return (
     <div className="container h-5/5">
-      <h1 className="text-2xl font-bold text-center mb-6 mt-3">
+      <motion.h1
+        className="text-2xl font-bold text-center mb-6 mt-3"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         Fill Your Details For The Appointment
-      </h1>
-      <div className="align-items-center bg-blue-50 p-8 m-2">
-        <form class="row g-3 margin-auto" onSubmit={formSubmit}>
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">
+      </motion.h1>
+
+      <motion.div
+        className="align-items-center bg-blue-50 p-8 m-2"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <form className="row g-3 margin-auto" onSubmit={formSubmit}>
+          <div className="col-md-6">
+            <label htmlFor="inputEmail4" className="form-label">
               Full Name
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="inputEmail4"
               ref={name}
               required
             />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label htmlFor="inputPassword4" className="form-label">
               Email
             </label>
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="inputPassword4"
               ref={email}
               required
             />
           </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">
+          <div className="col-12">
+            <label htmlFor="inputAddress" className="form-label">
               Address
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="inputAddress"
               placeholder="1234 Main St"
               ref={address}
               required
             />
           </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">
+          <div className="col-12">
+            <label htmlFor="inputAddress2" className="form-label">
               Address 2
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="inputAddress2"
               placeholder="Apartment, studio, or floor"
               ref={address2}
               required
             />
           </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">
+          <div className="col-md-6">
+            <label htmlFor="inputCity" className="form-label">
               Contact Number
             </label>
             <input
               type="number"
-              class="form-control"
+              className="form-control"
               id="inputCity"
               placeholder="Enter your Contact No."
               ref={contact}
               required
             />
           </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">
+          <div className="col-md-4">
+            <label htmlFor="inputState" className="form-label">
               Appointment Date
             </label>
             <input
               type="date"
-              class="form-control"
-              id="inputCity"
+              className="form-control"
+              id="inputDate"
               ref={date}
               required
             />
           </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">
+          <div className="col-md-2">
+            <label htmlFor="inputZip" className="form-label">
               Gender
             </label>
-            <select id="inputGender" class="form-select" ref={gender} required>
-              <option selected>Choose...</option>
+            <select
+              id="inputGender"
+              className="form-select"
+              ref={gender}
+              required
+            >
+              <option defaultValue>Choose...</option>
               <option>Male</option>
               <option>Female</option>
               <option>Other</option>
             </select>
           </div>
-          <div class="col-12">
-            <div class="form-check">
+          <div className="col-12">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 id="gridCheck"
                 required
               />
-              <label class="form-check-label" for="gridCheck">
+              <label className="form-check-label" htmlFor="gridCheck">
                 All Details Legit
               </label>
             </div>
           </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-dark">
+          <div className="col-12">
+            <button type="submit" className="btn btn-dark">
               Submit
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };
